@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Evangadi/static/css/main.63228038.css",
-    "main.js": "/Evangadi/static/js/main.4bc31e58.js",
+    "main.js": "/Evangadi/static/js/main.bc173e6b.js",
     "index.html": "/Evangadi/index.html",
     "main.63228038.css.map": "/Evangadi/static/css/main.63228038.css.map",
-    "main.4bc31e58.js.map": "/Evangadi/static/js/main.4bc31e58.js.map"
+    "main.bc173e6b.js.map": "/Evangadi/static/js/main.bc173e6b.js.map"
   },
   "entrypoints": [
     "static/css/main.63228038.css",
-    "static/js/main.4bc31e58.js"
+    "static/js/main.bc173e6b.js"
   ]
 }
