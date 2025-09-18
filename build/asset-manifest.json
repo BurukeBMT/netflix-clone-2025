@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Evangadi/static/css/main.63228038.css",
-    "main.js": "/Evangadi/static/js/main.bc173e6b.js",
-    "index.html": "/Evangadi/index.html",
-    "main.63228038.css.map": "/Evangadi/static/css/main.63228038.css.map",
-    "main.bc173e6b.js.map": "/Evangadi/static/js/main.bc173e6b.js.map"
+    "main.css": "/netflix-clone-2025/static/css/main.63228038.css",
+    "main.js": "/netflix-clone-2025/static/js/main.6699c35c.js",
+    "index.html": "/netflix-clone-2025/index.html",
+    "main.63228038.css.map": "/netflix-clone-2025/static/css/main.63228038.css.map",
+    "main.6699c35c.js.map": "/netflix-clone-2025/static/js/main.6699c35c.js.map"
   },
   "entrypoints": [
     "static/css/main.63228038.css",
-    "static/js/main.bc173e6b.js"
+    "static/js/main.6699c35c.js"
   ]
 }
