@@ -1,70 +1,164 @@
-# Getting Started with Create React App
+# 🎬 Netflix Clone 2025
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully responsive Netflix clone built with React, featuring dynamic movie data from The Movie Database (TMDB) API. This project replicates the Netflix user interface with interactive features like movie trailers, categorized rows, and a sleek design.
 
-## Available Scripts
+## 🌟 Live Demo
 
-In the project directory, you can run:
+🚀 **Deployed on Netlify:** [https://bmt-nf-dep.netlify.app/](https://bmt-nf-dep.netlify.app/)
 
-### `npm start`
+📂 **GitHub Repository:** [https://github.com/BurukeBMT/netflix-clone-2025](https://github.com/BurukeBMT/netflix-clone-2025)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **🎥 Dynamic Banner**: Random Netflix original movie with backdrop, title, description, and play buttons
+- **📺 Movie Rows**: Categorized sections including Netflix Originals, Trending, Top Rated, Action, Comedy, Horror, Romance, TV Shows, and Documentaries
+- **🎞️ Trailer Playback**: Click on any movie poster to watch the official trailer via YouTube integration
+- **🔍 Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **🎨 Netflix UI**: Authentic Netflix-inspired design with smooth scrolling and hover effects
+- **⚡ Fast Loading**: Optimized with React and efficient API calls
+- **🔒 Secure API**: Uses TMDB API with environment variable protection
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React 19.1.1
+- **Styling**: CSS3 with custom components
+- **Icons**: Material-UI Icons
+- **API**: The Movie Database (TMDB)
+- **HTTP Client**: Axios
+- **Video Integration**: React YouTube & Movie Trailer
+- **Build Tool**: Create React App
+- **Deployment**: Netlify (connected to GitHub)
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+netflix-clone-2025/
+├── public/
+│   ├── favicon.ico          # Netflix favicon
+│   ├── index.html           # Main HTML template
+│   ├── manifest.json        # PWA manifest
+│   └── robots.txt           # SEO robots file
+├── src/
+│   ├── components/
+│   │   ├── Banner/          # Hero banner component
+│   │   ├── Footer/          # Footer with social links
+│   │   ├── Header/          # Navigation header
+│   │   └── Row/             # Movie rows and lists
+│   ├── pages/
+│   │   └── Home/            # Main home page
+│   ├── utils/
+│   │   ├── axios.jsx        # API configuration
+│   │   └── requests.jsx     # TMDB API endpoints
+│   ├── assets/              # Images and media
+│   ├── App.jsx              # Main app component
+│   └── index.jsx            # App entry point
+├── netlify.toml             # Netlify deployment config
+├── package.json             # Dependencies and scripts
+└── README.md                # Project documentation
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js (v14 or higher)
+- npm or yarn
+- TMDB API Key (get one from [https://www.themoviedb.org/settings/api](https://www.themoviedb.org/settings/api))
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/BurukeBMT/netflix-clone-2025.git
+   cd netflix-clone-2025
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Set up environment variables**
 
-## Learn More
+   Create a `.env` file in the root directory:
+   ```env
+   REACT_APP_API_KEY=your_tmdb_api_key_here
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-### Code Splitting
+## 📜 Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `npm start` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm run eject` - Ejects from Create React App (irreversible)
 
-### Analyzing the Bundle Size
+## 🎯 Key Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Header Component
+- Netflix logo navigation
+- Menu items: Home, TV Shows, Movies, Latest, My List, Browse by Language
+- Search, Notifications, and Account icons
 
-### Making a Progressive Web App
+### Banner Component
+- Dynamic background from random Netflix original
+- Movie title and description
+- Play and My List buttons
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Row Components
+- Horizontal scrolling movie lists
+- Clickable posters that launch trailers
+- Large row for Netflix Originals
 
-### Advanced Configuration
+### Footer Component
+- Social media icons (Facebook, Instagram, YouTube)
+- Legal and help links
+- Service code and copyright notice
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔧 API Integration
 
-### Deployment
+The app uses The Movie Database (TMDB) API to fetch:
+- Netflix Originals
+- Trending content
+- Top-rated movies
+- Genre-specific movies (Action, Comedy, Horror, Romance)
+- TV Shows
+- Documentaries
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🌐 Deployment
 
-### `npm run build` fails to minify
+This project is automatically deployed to Netlify via GitHub integration. Any push to the main branch triggers a new build and deployment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Netlify Configuration
+- Build command: `npm run build`
+- Publish directory: `build`
+- Connected repository: [https://github.com/BurukeBMT/netflix-clone-2025](https://github.com/BurukeBMT/netflix-clone-2025)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is for educational purposes only and is not affiliated with Netflix.
+
+## 🙏 Acknowledgments
+
+- Netflix for the inspiration
+- The Movie Database (TMDB) for the API
+- React community for the amazing framework
+- Material-UI for the icons
+
+---
+
+**Built with ❤️ by Buruke BMT**
